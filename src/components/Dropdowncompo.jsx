@@ -34,7 +34,7 @@ const DummyComponent = () => {
 
   const handleSearch = (e) => {
     if (!selectedCities) {
-      console.log("Selected cities is undefined or null.");
+      //console.log("Selected cities is undefined or null.");
       return;
     }
 
@@ -43,7 +43,7 @@ const DummyComponent = () => {
       city.toLowerCase().includes(searchTerm)
     );
 
-    console.log("Filtered Cities:", filteredCities);
+   // console.log("Filtered Cities:", filteredCities);
     setSelectedCities(filteredCities);
     if(e===""||filteredCities.length===0)
     setSelectedCities(selectedState.city.map(city => city.name));  // Update selectedCities with filtered cities
